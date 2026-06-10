@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PESMate</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>⚽ PESMate</h1>
+  <p>Find eFootball opponents instantly</p>
+</header>
+
+<main class="container">
+
+  <div class="card" id="loginCard">
+    <h2>Welcome</h2>
+    <p>Sign in to start playing.</p>
+
+    <button id="loginBtn">
+      Login with Google
+    </button>
+  </div>
+
+  <div class="card hidden" id="homeCard">
+
+    <h2 id="welcomeText">
+      Welcome
+    </h2>
+
+    <button id="findBtn">
+      🎮 Find Opponent
+    </button>
+
+    <div id="players"></div>
+
+  </div>
+
+</main>
+
+<nav class="bottom-nav">
+  <a href="#">🏠</a>
+  <a href="#">💬</a>
+  <a href="#">🏆</a>
+  <a href="#">👤</a>
+</nav>
+
+<script type="module" src="firebase-config.js"></script>
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
